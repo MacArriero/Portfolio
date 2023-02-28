@@ -1,12 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair-Display');
+
 
 body {
     background-color: white;
     color: black;
-    font-family: 'Inter', sans-serif;
+    font-family: 'playfair-display', sans-serif;
     padding: 0;
     margin: 0;
 
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #3D90FF;
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+}
+
+.logo {
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-bar ul li a{
+    text-align: none;
+    text-decoration: none;
+    padding: 6px 15px ;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-bar ul li a:hover {
+    background: white;
+    color: #3D90FF;
+}
+  
+.nav-bar ul li i:hover {
+    background: white;
+    color: #3D90FF;
 }
 
 section{
