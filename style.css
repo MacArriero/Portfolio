@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair-Display');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 
 body {
     background-color: white;
     color: black;
-    font-family: 'playfair-display', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-
 }
 
 header {
@@ -77,6 +76,7 @@ section{
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .home {
@@ -164,6 +164,52 @@ section .wave.wave4 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    width: 500px;
+}
+
+img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px
+}
+
+.column .text{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.dynamic-text{
+    color: black;;
+}
+
+.dynamic-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3D90FF;
+    border-left: 2px solid black;
+    animation: type 4s steps(12) infinite;
+}
+
+@keyframes type {
+    40%, 60%{
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
 }
 
 
