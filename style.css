@@ -26,6 +26,13 @@ header {
     z-index: 1001;
 }
 
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
 .logo {
     color:white;
     font-weight: 700;
@@ -34,6 +41,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-left: 20px;
+   
 }
 
 header a {
@@ -71,13 +79,13 @@ header a {
     color: #3D90FF;
 }
 
-section{
+/* section{
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
     overflow: hidden;
-}
+} */
 
 .home {
     background-color: #3D90FF;
@@ -175,7 +183,23 @@ section .wave.wave4 {
     width: 500px;
 }
 
-img {
+.home .row .column img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px
+}
+
+.home .row .column img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px
+}
+
+.about-me {
+    background-color: white;
+}
+
+.about-me .row .column img{
     border-radius: 50%;
     width: 400px;
     height: 400px
@@ -203,6 +227,80 @@ img {
     animation: type 4s steps(12) infinite;
 }
 
+
+.skills{
+    background-color: #3D90FF;
+    background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
+    color: white;    
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255,255, 0.1), rgba(255, 255, 255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 3.7);
+}
+
+.skills-logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    place-items: center;
+    gap: 1.8rem;
+}
+
+.skill-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    background-color: white;
+    padding: 20px;
+}
+
+.skill-logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.skill-logo:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.skill-logo:nth-child(4){
+    transition-delay: 600ms;
+}
+.skill-logo:nth-child(5){
+    transition-delay: 800ms;
+}
+.skill-logo:nth-child(6){
+    transition-delay: 1000ms;
+}
+.skill-logo:nth-child(7){
+    transition-delay: 1200ms;
+}
+.skill-logo:nth-child(8){
+    transition-delay: 1400ms;
+}
+.skill-logo:nth-child(9){
+    transition-delay: 1600ms;
+}
+.skill-logo:nth-child(10){
+    transition-delay: 1800ms;
+}
+.skill-logo:nth-child(11){
+    transition-delay: 2000ms;
+}
+.skill-logo:nth-child(12){
+    transition-delay: 2200ms;
+}
+.skill-logo:nth-child(13){
+    transition-delay: 2400ms;
+}
+.skill-logo:nth-child(14){
+    transition-delay: 2800ms;
+}
+
 @keyframes type {
     40%, 60%{
         left: 100%;
@@ -212,5 +310,20 @@ img {
     }
 }
 
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
 
+.projects {
+    background-color: #3D90FF;
+    background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
+    color: white;
+}
 
+.contact {
+    background-color: #21D4FD;
+    background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
+    color: white;
+}

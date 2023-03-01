@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="skills.json"></script>
 </head>
 <body>
     <header>
@@ -19,54 +20,107 @@
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#work-history">Work History</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
     </header>
     <section class="home" id="home">
-        <div class="row">
-            <div class="column">
-                <img src="assets/headshot.png" alt="headshot">
+        <div class="wrapper">
+            <div class="row">
+                <div class="column">
+                    <img src="assets/devart.jpg" alt="devart">
+                </div>
+                <div class="column">
+                    <span class="text static-text">Hey there! My name is Mac and I'm a </span>
+                    <span class="text dynamic-text"></span>
+                </div>
             </div>
-            <div class="column">
-                <span class="text static-text">Hey there! My name is Mac and I'm a </span>
-                <span class="text dynamic-text"></span>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <div class="hidden">
+            <h1>About Me</h1>
+            <div class="row">
+                <div class="column">
+                    <p>I'm Computer Science graduate from RMIT university.</p>
+                </div>
+                <div class="column">
+                    <img src="assets/headshot.png" alt="headshot">
+                </div>
             </div>
         </div>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div>
     </section>
 
-    <section class="hidden" id="about-me">
-        <h1>About Me</h1>
-        <p>I'm Computer Science graduate from RMIT university.</p>
-
+    <section class="skills" id="skills">
+        <div class="hidden">
+            <h1>Skills</h1>
+            <div class="skills-logos">
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" alt="Java">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="React">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/fluency/48/000000/node-js.png" alt="ExpressJS">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="NodeJS">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/firebase.png" alt="Firebase">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="Javascript">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="PostgreSQL">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="AWS">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+                </div>
+                <div class="skill-logo hidden">
+                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">
+                </div>
+                
+            </div>
+        </div>
+       
     </section>
 
-    <section class="hidden" id="skills">
-        <h1>Skills</h1>
-        <p>C++</p>
-        <p>Java</p>
-        <p>React</p>
+    <section class="projects" id="projects">
+        <div class="hidden">
+            <h1>Projects</h1>
+            <p>Project 1</p>
+            <p>Project 2</p>
+        </div>
     </section>
 
-    <section class="hidden" id="projects">
-        <h1>Projects</h1>
-        <p>Project 1</p>
-        <p>Project 2</p>
-    </section>
-
-    <section class="hidden" id="work-history">
-        <h1>Work History</h1>
-        <p>Andriod App Developer (Flutter) 2022</p>
-    </section>
-
-    <section class="hidden" id="contact-me">
-        <h1>Contact Me</h1>
-        <p>arrieromac@gmail.com</p>
+    <section class="contact" id="contact-me">
+        <div class="hidden">
+            <h1>Contact Me</h1>
+            <p>arrieromac@gmail.com</p>
+        </div> 
     </section>
 </body>
 </html>
