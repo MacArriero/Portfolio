@@ -310,12 +310,6 @@ section .wave.wave4 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-content: center;
-    place-items: center;
-    gap: 1.8rem;
-
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
     place-items: center;
@@ -403,8 +397,9 @@ section .wave.wave4 {
     padding: 1.5rem;
     font-size: 1rem;
     text-align: center;
-    color: #3363ff;
-    background-color: #d8e0fd;
+    color: white;
+    background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
+    background-color: #3D90FF;
     border: none;
     border-radius: 0.4rem;
     transition: 0.2s;
@@ -419,7 +414,9 @@ section .wave.wave4 {
 
 .card-btn:hover,
 .card-btn:active {
-    background-color: #c2cffc;
+    background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
+    background-color: #3D90FF;
+    
 }
 
 .card-btn:hover span,
