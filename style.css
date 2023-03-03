@@ -302,16 +302,133 @@ section .wave.wave4 {
     }
 }
 
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
-
 .projects {
     background-color: #3D90FF;
     background-image: linear-gradient(90deg, #3D90FF 0%, #5404A5 100%);
     color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    place-items: center;
+    gap: 1.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    place-items: center;
+    gap: 1.8rem;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba( 0, 0, 0 , 0.15);
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    height: 450px;
+}
+
+.imgBox {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba( 0, 0, 0 , 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card:hover .imgBox {
+    width: 250px;
+    height: 250px;
+}
+
+.card-content .details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card-content .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+
+.card-content .details p {
+    color: #555;
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+    background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active {
+    margin-left: 1.5rem;
+}
+
+.card .details a {
+    text-decoration: none;
 }
 
 .contact {
@@ -360,4 +477,10 @@ form button {
     cursor: pointer;
     width: 150px;
     margin: 20px auto 0;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
