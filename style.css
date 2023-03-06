@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: white;
@@ -7,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 header {
@@ -16,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 0;
     margin-bottom: 0;
     background-color: #3D90FF;
@@ -42,6 +47,15 @@ section {
     letter-spacing: 2px;
     padding-left: 20px;
    
+}
+
+img {
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+}
+
+img:hover {
+    transform: translateX(10px);
 }
 
 header a {
@@ -178,13 +192,7 @@ section .wave.wave4 {
 .home .row .column img{
     border-radius: 50%;
     width: 400px;
-    height: 400px
-}
-
-.home .row .column img{
-    border-radius: 50%;
-    width: 400px;
-    height: 400px
+    height: 400px;
 }
 
 .about-me {
@@ -194,7 +202,7 @@ section .wave.wave4 {
 .about-me .row .column img{
     border-radius: 50%;
     width: 400px;
-    height: 400px
+    height: 400px;
 }
 
 .column .text{
@@ -462,6 +470,10 @@ form input, form textarea{
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white
+}
+
+form textarea {
+    resize: none;
 }
 
 form button {
