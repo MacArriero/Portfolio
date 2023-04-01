@@ -15,6 +15,7 @@ html {
 body {
   background-color: #1D1D1F;
   color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -354,6 +355,7 @@ section {
   width: 200%;
   transform: translateX(-25%);
   border-radius: 50% 50% 0 0;
+  overflow-x: hidden;
 }
 
 .contact-me > * {
