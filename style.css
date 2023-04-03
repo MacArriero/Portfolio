@@ -578,8 +578,7 @@ only screen and (max-device-width: 1024px){
   }
 
   .works {
-    height: 280vh;
-    overflow-y: scroll;
+    height: auto;
   }
 
   #lets-code-together > h1 {
@@ -592,9 +591,8 @@ only screen and (max-device-width: 1024px){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    transform: rotateZ(0deg) translateY(11%);
+    transform: rotateZ(0deg) translateY(0%);
     width: 100vw;
-    align-items: stretch;
     height: auto;
   }
 
