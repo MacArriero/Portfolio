@@ -555,8 +555,6 @@ only screen and (max-device-width: 1024px){
     width: 35vh;
     height: 60vh;
     object-fit: cover;
-    perspective: 100px;
-    transform-style: preserve-3d;
   }
 
   .selected-works {
