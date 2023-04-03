@@ -123,6 +123,7 @@ section {
 
 #home {
   height: 90vh;
+  touch-action: none;
 }
 
 #blur {

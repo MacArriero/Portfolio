@@ -85,13 +85,18 @@ window.onload = function () {
 
 const home = document.querySelector('#home');
 home.addEventListener("mousemove", event => {
-  let xAxis = (window.innerWidth/2 - event.pageX) / 20;
-  let yAxis = (window.innerHeight/2 - event.pageY) / 20;
-  section1Image.style.transition = "none";
-  section1Image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+  event.preventDefault();
+  var media = window.matchMedia("(min-width: 1080px");
+  if (media.matches){
+    let xAxis = (window.innerWidth/2 - event.pageX) / 25;
+    let yAxis = (window.innerHeight/2 - event.pageY) / 25;
+    section1Image.style.transition = "none";
+    section1Image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+  }  
 });
 
 home.addEventListener("mouseleave", event => {
+  event.preventDefault();
   section1Image.style.transition = "all 0.5s ease";
   section1Image.style.transform = `rotateY(0deg) rotateX(0deg)`;
 });
