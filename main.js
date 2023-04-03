@@ -68,19 +68,19 @@ document.querySelector("#section-1-name").onmouseover = event => {
   }, 30);
 }
 
-// Image changer
+// // Image changer
 let images = ['https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif', 'https://media.giphy.com/media/8fRwPZtbWkkX6/giphy.gif', 'https://media.giphy.com/media/B6IBrYTyvo1UJOXF9u/giphy.gif'];
 
 let index = 0;
 const section1Image = document.querySelector('#section-1-image');
 
 function change() {
-   section1Image.src = images[index];
-   index > 1 ? index = 0 : index++;
+  section1Image.src = images[index];
+  index > 1 ? index = 0 : index++;
 }
 
 window.onload = function () {
-    setInterval(change, 4000);
+  setInterval(change, 2000);
 };
 
 window.addEventListener("mousemove", event => {
@@ -127,17 +127,14 @@ contactMeMenu.addEventListener("click", event => {
 
 // Sends email from client side
 emailjs.init('obtEvVRYz6LJbg3Xg');
-window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        emailjs.sendForm('service_x46fr4x', 'template_bhhy00n', this)
-        .then(function() {
-            alert('Thank you! Your message was successfully sent.');
-            document.getElementById("contact-form").reset();
-        }, function(error) {
-            alert('Error with sending the message - ', error);
-        });
-        
-    });
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  emailjs.sendForm('service_x46fr4x', 'template_bhhy00n', this)
+  .then(function() {
+      alert('Thank you! Your message was successfully sent.');
+      document.getElementById("contact-form").reset();
+  }, function(error) {
+      alert('Error with sending the message - ', error);
+  });
     
-}
+});
