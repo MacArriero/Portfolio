@@ -83,20 +83,17 @@ window.onload = function () {
   setInterval(change, 2000);
 };
 
-window.addEventListener("mousemove", event => {
-  const { top, bottom, left, right } = event.target.getBoundingClientRect();
+const home = document.querySelector('#home');
+home.addEventListener("mousemove", event => {
+  let xAxis = (window.innerWidth/2 - event.pageX) / 20;
+  let yAxis = (window.innerHeight/2 - event.pageY) / 20;
+  section1Image.style.transition = "none";
+  section1Image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+});
 
-  const middleX = (right - left) / 2;
-  const middleY = (bottom - top) / 2;
-
-  const clientX = event.clientX;
-  const clientY = event.clientY;
-
-  const offsetX = (clientX - middleX) / middleX;
-  const offsetY = (middleY - clientY) / middleY;
-
-  section1Image.style.transform = `perspective(1000px) rotateY(${offsetX *
-    5}deg) rotateX(${offsetY * 5}deg)`;
+home.addEventListener("mouseleave", event => {
+  section1Image.style.transition = "all 0.5s ease";
+  section1Image.style.transform = `rotateY(0deg) rotateX(0deg)`;
 });
 
 
